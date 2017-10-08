@@ -14,8 +14,8 @@ This is the code for our paper: adaptively weighted multi-task deep network for 
   ```
 
 ### Prepare
-
-- You can download the ResNet50 model and CelebA train, val, test files from [google drive](https://drive.google.com/open?id=0B3S9YfMB_24QZENmaXYzdTFvdkE) or [baidu yun](http://pan.baidu.com/s/1hrJUedm)
+-  create **model** folder and **data** folder under current project.
+-  You can download the ResNet50 model and CelebA train, val, test files from [google drive](https://drive.google.com/open?id=0B3S9YfMB_24QZENmaXYzdTFvdkE) or [baidu yun](http://pan.baidu.com/s/1hrJUedm)
 -  put the **resnet_50** folder under **model** folder
 -  put the **CelebA** folder under **data** folder.
 
