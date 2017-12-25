@@ -90,6 +90,7 @@ class TrainValWeightedEuclideanLossLayer(caffe.Layer):
                 trend = abs(cur_val_mean - self.pre_val_mean) / cur_val_mean
                 self.norm_trend = trend / np.mean(trend)
                 self.norm_loss = cur_val_mean / np.mean(cur_val_mean)
+                self.pre_val_mean = cur_val_mean
             weights = self.norm_trend * self.norm_loss
             norm_weights = weights / np.mean(weights)
             repmated_weight = np.tile(norm_weights, [self.batch, 1])
